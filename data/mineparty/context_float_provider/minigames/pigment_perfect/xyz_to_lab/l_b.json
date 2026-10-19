@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:sub",
+  "left": {
+    "type": "minecraft:mul",
+    "inputs": [
+      116,
+      {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:div",
+          "left": "mineparty:minigames/pigment_perfect/rgb_to_xyz/y_b",
+          "right": 100
+        },
+        "exponent": {
+          "type": "minecraft:div",
+          "left": 1,
+          "right": 3
+        }
+      }
+    ]
+  },
+  "right": 16
+}

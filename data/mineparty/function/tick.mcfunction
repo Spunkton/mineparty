@@ -1,0 +1,9 @@
+function mineparty:editor/tick
+function mineparty:map/tick
+function mineparty:game/tick
+function mineparty:minigames/tick
+function mineparty:test/tick
+function mineparty:tags/tick
+function mineparty:settings/tick
+function mineparty:other/custom_trigger
+function mineparty:other/doohickeys/tick

@@ -1,0 +1,1 @@
+function mineparty:game/items/fishy_rod/tick

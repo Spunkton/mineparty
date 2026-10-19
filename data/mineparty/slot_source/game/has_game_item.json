@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:limit_slots",
+  "slot_source": [
+    {
+      "type": "minecraft:filtered",
+      "slot_source": "minecraft:player",
+      "item_filter": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "power": true
+          }
+        }
+      }
+    },
+    {
+      "type": "minecraft:filtered",
+      "slot_source": "minecraft:player",
+      "item_filter": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "special_dice": true
+          }
+        }
+      }
+    }
+  ],
+  "limit": 27
+}

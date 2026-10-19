@@ -1,0 +1,263 @@
+{
+  "type": "minecraft:notice",
+  "title": "Credits",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "===== Original Concept =====",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Muffin64_"
+          }
+        }
+      },
+      "description": "Moofin§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Spuncton"
+          }
+        }
+      },
+      "description": "Spunkton§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "===== Code =====",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Spuncton"
+          }
+        }
+      },
+      "description": "Spunkton§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "===== Music & Jingles =====",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Spuncton"
+          }
+        }
+      },
+      "description": "Spunkton§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "===== Player Heads =====",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Klomberrymen"
+          }
+        }
+      },
+      "description": "Klom \"Berry\" Men§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Spuncton"
+          }
+        }
+      },
+      "description": "Spunkton§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "===== Beta Testers =====",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "HDfroggo"
+          }
+        }
+      },
+      "description": "HDfroggo§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "JhamusWinston"
+          }
+        }
+      },
+      "description": "Jhams§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Klomberrymen"
+          }
+        }
+      },
+      "description": "Klom \"Berry\" Men§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Muffin64_"
+          }
+        }
+      },
+      "description": "Moofin§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Nhaibar"
+          }
+        }
+      },
+      "description": "Nhaibar§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "28Nickel"
+          }
+        }
+      },
+      "description": "Nickel§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Spuncton"
+          }
+        }
+      },
+      "description": "Spunkton§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "===== Resources =====",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Block Display Studio",
+          "underlined": true,
+          "click_event": {
+            "action": "open_url",
+            "url": "https://eszesbalint.github.io/bdstudio/editor"
+          }
+        },
+        {
+          "text": "\n\nGalSergey's Number Provider Generator",
+          "underlined": true,
+          "click_event": {
+            "action": "open_url",
+            "url": "https://far.ddns.me/npg"
+          }
+        },
+        {
+          "text": "\n\nMcStacker",
+          "underlined": true,
+          "click_event": {
+            "action": "open_url",
+            "url": "https://mcstacker.net"
+          }
+        },
+        {
+          "text": "\n\nMisode",
+          "underlined": true,
+          "click_event": {
+            "action": "open_url",
+            "url": "https://misode.github.io"
+          }
+        },
+        {
+          "text": "\n\nWordpress thingy that allows midi to json conversion",
+          "underlined": true,
+          "click_event": {
+            "action": "open_url",
+            "url": "https://www.visipiano.com/midi-to-json-converter/"
+          }
+        }
+      ],
+      "width": 300
+    }
+  ]
+}

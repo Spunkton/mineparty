@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bone"
+    },
+    "title": {
+      "text": "A Broken Hand"
+    },
+    "description": {
+      "text": "You meanie!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "mineparty:mineparty/talk_to_helper",
+  "criteria": {
+    "bazinga": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

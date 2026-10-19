@@ -1,0 +1,6 @@
+#What happened to the previous one anyways?
+tag @e[type=allay] remove helper
+
+#Summons helper
+summon allay ~ ~ ~ {Silent:1b,Invulnerable:1b,home_pos:[I;0,0,0],home_radius:4,Tags:["helper"],Team:"no_collision",equipment:{mainhand:{id:"minecraft:player_head",count:1,components:{"minecraft:custom_data":{fake_die:true},"minecraft:profile":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc5MDk1NDE1NjY3MCwKICAicHJvZmlsZUlkIiA6ICI4MDQ2MzdjMTA1ZGY0MzM0ODE3YTNmMDcxMTMyOTYyMSIsCiAgInByb2ZpbGVOYW1lIiA6ICJQcmluY2VDUiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83OWE1ODAxNjA1ZTkyODVhYWMzOGI4ZmE0OThjMzkyYTRiNjcxOWI3Y2QyZmNkNGE0NTFjYTdiM2FlYTIxODc0IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="}]},"minecraft:custom_name":{"italic":false,"text":"Fake Die"},"minecraft:lore":[{"color":"gray","italic":false,"text":"How did you get this? Give it back!"}]}}}}
+execute at @n[tag=helper] run playsound minecraft:entity.allay.item_thrown neutral @a ~ ~ ~ 3 0

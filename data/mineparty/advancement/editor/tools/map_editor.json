@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "map_editor": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineparty:editor/tools/map_editor"
+  }
+}

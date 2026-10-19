@@ -1,0 +1,1 @@
+give @s trident[item_model="heart_of_the_sea",custom_name={"italic":false,"text":"Bouncy Ball"},custom_data={bouncy_ball:1b,bounce:950},lore=[{"color":"gray","italic":false,"text":"Boioioioioioing"}],max_stack_size=64,!max_damage,!tool,!attribute_modifiers] 1

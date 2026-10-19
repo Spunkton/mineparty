@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "evoker_trap": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineparty:game/items/evoker_trap/use"
+  }
+}

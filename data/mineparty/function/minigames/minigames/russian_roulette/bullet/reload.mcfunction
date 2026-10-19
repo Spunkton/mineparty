@@ -1,0 +1,21 @@
+# Kill old
+kill @e[tag=bullet]
+
+# Don't shoot yet
+scoreboard players set #can_shoot minigames 0
+
+# Orient the display
+execute as @n[tag=russian_roulette_display] at @s facing entity @n[tag=russian_roulette_start] eyes run tp @s ~ ~ ~ ~ 0
+
+# Load 6 Bullets
+execute at @n[tag=russian_roulette_display] run summon text_display ^ ^2.40 ^ {billboard:"fixed",teleport_duration:0,Tags:["bullet","bullet_0","root"],Passengers:[{id:"minecraft:text_display",billboard:"fixed",teleport_duration:0,Tags:["bullet","bullet_0"],Passengers:[{id:"minecraft:text_display",billboard:"fixed",teleport_duration:0,Tags:["bullet","bullet_0","back"],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,-0.25f],scale:[6f,6f,6f]},text:{"color":"#DD8800","text":"◎"},background:14518272}],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,-0.125f],scale:[6f,6f,6f]},text:{"color":"gold","text":"◎"},background:16711680}],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[6f,6f,6f]},text:{"color":"#FFDD00","text":"◎"},background:16711680}
+
+# Sound
+execute at @n[tag=bullet_0,tag=root] run playsound minecraft:block.copper.hit block @a ~ ~ ~ 0.8 2
+
+# Rotate towards players
+execute as @e[tag=bullet] at @s rotated as @n[tag=russian_roulette_display] run tp @s ~ ~ ~ ~ 0
+
+
+# Schedule next
+schedule function mineparty:minigames/minigames/russian_roulette/bullet/reload/1 2t

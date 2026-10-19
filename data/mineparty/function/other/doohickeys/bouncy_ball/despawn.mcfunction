@@ -1,0 +1,6 @@
+# If it wasn't custom
+execute unless data entity @s data.texture run summon item ~ ~ ~ {Motion:[0.0,0.2,0.0],Item:{id:"minecraft:trident",count:1,components:{"minecraft:item_model":"heart_of_the_sea","minecraft:custom_name":{"italic":false,"text":"Bouncy Ball"},"minecraft:custom_data":{bouncy_ball:true,bounce:950},"minecraft:lore":[{"color":"gray","italic":false,"text":"Boioioioioioing"}],"minecraft:max_stack_size":64,"!minecraft:max_damage":{},"!minecraft:tool":{},"!minecraft:attribute_modifiers":{}}}}
+
+# If it was custom
+$execute if data entity @s data.texture run summon item ~ ~ ~ {Motion:[0.0,0.2,0.0],Item:{id:"minecraft:trident",count:1,components:{"minecraft:item_model":"magma_cream","minecraft:custom_name":{"italic":false,"text":"Custom Bouncy Ball"},"minecraft:custom_data":{bouncy_ball:true,bounce:$(bounce),texture:""},"minecraft:lore":[{"color":"white","italic":false,"text":"Bounciness: \u00a76$(bounce)/1000"}],"minecraft:max_stack_size":64,"!minecraft:max_damage":{},"!minecraft:tool":{},"!minecraft:attribute_modifiers":{}}}}
+execute if data entity @s data.texture run data modify entity @n[type=item,tag=!bouncy_ball] Item.components."minecraft:custom_data".texture set from entity @s data.texture

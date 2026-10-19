@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    1.2,
+    {
+      "type": "minecraft:sin",
+      "input": {
+        "type": "minecraft:div",
+        "left": {
+          "type": "minecraft:from_int",
+          "input": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "context",
+              "target": "this"
+            },
+            "score": "minigames_teams"
+          }
+        },
+        "right": 100
+      }
+    }
+  ]
+}

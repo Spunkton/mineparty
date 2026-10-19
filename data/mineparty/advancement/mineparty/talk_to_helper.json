@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:allay_spawn_egg"
+    },
+    "title": {
+      "text": "A Helping Hand"
+    },
+    "description": {
+      "text": "Talk to the Helper, they love to help around"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "mineparty:mineparty/root",
+  "criteria": {
+    "bazinga": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

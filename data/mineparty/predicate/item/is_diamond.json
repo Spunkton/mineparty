@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "container.0": {
+        "items": [
+          "minecraft:diamond",
+          "minecraft:diamond_block"
+        ]
+      }
+    }
+  }
+}

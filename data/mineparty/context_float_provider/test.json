@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:add",
+  "inputs": [
+    {
+      "type": "minecraft:storage",
+      "storage": "mineparty:main",
+      "path": "test.bornana",
+      "fallback": 0
+    },
+    {
+      "type": "minecraft:storage",
+      "storage": "mineparty:main",
+      "path": "test.bazingers",
+      "fallback": 0
+    }
+  ]
+}

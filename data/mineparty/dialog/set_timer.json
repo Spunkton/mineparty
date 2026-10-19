@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Set Timer"
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:clock"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "======= Timer =======",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Note: Only use single quotation marks!\nEg. tellraw @p \"hello\" -> tellraw @p 'hello' ",
+      "width": 220
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "command",
+      "label": "Command that runs when timer is finished:",
+      "max_length": 256
+    },
+    {
+      "type": "minecraft:text",
+      "key": "sec",
+      "width": 100,
+      "label": "Time (in seconds):",
+      "max_length": 8
+    }
+  ],
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function mineparty:timer/start/with_notif {command:\"$(command)\",sec:$(sec)}"
+    }
+  },
+  "no": {
+    "label": "Cancel"
+  }
+}

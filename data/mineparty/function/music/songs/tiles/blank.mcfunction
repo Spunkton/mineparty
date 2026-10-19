@@ -1,0 +1,1 @@
+data modify storage mineparty:main song append value {notes:[{type:"harp",pitch:0.79}],tick:4}

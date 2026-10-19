@@ -1,0 +1,1 @@
+tellraw @p[tag=!not_playing] "There is nobody to play against."

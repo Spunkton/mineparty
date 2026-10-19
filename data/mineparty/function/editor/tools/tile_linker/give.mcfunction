@@ -1,0 +1,1 @@
+give @p brick[consumable={consume_seconds:0,animation:"none",sound:"minecraft:block.chain.place",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:{sound_id:""}}]},item_model="lead",custom_data={tile_linker:true,editor_tool:true},custom_name={"italic":false,"text":"Tile Linker"},max_stack_size=1] 1

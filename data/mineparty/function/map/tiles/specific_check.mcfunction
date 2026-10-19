@@ -1,0 +1,1 @@
+return run function mineparty:map/tiles/specific_check/with_type with entity @s data

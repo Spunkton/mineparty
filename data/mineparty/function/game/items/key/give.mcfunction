@@ -1,0 +1,1 @@
+give @s flint[custom_name={"italic":false,"text":"Key"},item_model="trial_key",custom_data={key:true,game_item:true,power:true},max_stack_size=1] 1

@@ -1,0 +1,2 @@
+summon item_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[1f,0f,0f,1f],translation:[0f,0f,1.875f],scale:[0.5f,0.5f,0.5f]},billboard:"fixed",Tags:["no_warp_indicator","tile_indicator","editor_indicator"],item:{id:"minecraft:barrier",count:1},Glowing:false}
+summon item_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[1f,0f,0f,1f],translation:[0f,0f,1.875f],scale:[0.3f,0.3f,0.3f]},billboard:"fixed",Tags:["no_warp_indicator","tile_indicator","editor_indicator"],item:{id:"minecraft:ender_pearl",count:1},Glowing:false}

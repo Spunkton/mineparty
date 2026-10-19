@@ -1,0 +1,1 @@
+give @p brick[consumable={consume_seconds:0,animation:"none",sound:"ui.cartography_table.take_result",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:{sound_id:""}}]},item_model="minecraft:writable_book",custom_data={tile_editor:true,editor_tool:true},custom_name={"italic":false,"text":"Tile Editor"},max_stack_size=1] 1

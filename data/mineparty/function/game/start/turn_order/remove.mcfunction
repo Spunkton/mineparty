@@ -1,0 +1,1 @@
+$data remove storage mineparty:main turn_order[{UUID:$(UUID)}]

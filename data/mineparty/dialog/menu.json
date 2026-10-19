@@ -1,0 +1,132 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Mine Party Main Menu",
+    "color": "#b8eae6",
+    "bold": true
+  },
+  "external_title": [
+    {
+      "player": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzAzMjU4MDdkN2IzZTZmY2RmNjdlNDFmZjcxNzJhODgxYjJlNjk0Nzc4MDcyNTM3YTdjOTYwNWVkNzg5MjMzOCJ9fX0="
+          }
+        ]
+      },
+      "color": "white"
+    },
+    {
+      "text": " Mine Party Menu§l ",
+      "color": "#b8eae6"
+    },
+    {
+      "player": {
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE4Mjg4ODU4NGYwZGIxY2M0ZjAwMjI2YWU4NmNjY2UyYzBmMzhkODc4ZjkwNmIzN2ZkNjkyMGU2NzViNGE4MyJ9fX0="
+          }
+        ]
+      },
+      "color": "white"
+    }
+  ],
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "======= Gameplay =======",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:allay_spawn_egg"
+      },
+      "description": {
+        "text": "New Game§l ",
+        "color": "#acf1e9",
+        "click_event": {
+          "action": "run_command",
+          "command": "function mineparty:game/start/dialog with entity @n[tag=tile] data"
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:writable_book"
+      },
+      "description": {
+        "text": "Settings§l ",
+        "click_event": {
+          "action": "run_command",
+          "command": "trigger settings"
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "======= Info =======",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "Spuncton"
+          }
+        }
+      },
+      "description": {
+        "text": "Credits§l ",
+        "click_event": {
+          "action": "show_dialog",
+          "dialog": "mineparty:credits"
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "properties": [
+              {
+                "name": "textures",
+                "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjVjMGNmZTEwYWIzZjFmM2VjMjJkMWNiYzRlOWMzY2JiZjY0Y2EyZjQ1ZDBjYjkyMGRkNGFkNWE4YjIxN2M3MSJ9fX0="
+              }
+            ]
+          }
+        }
+      },
+      "description": {
+        "text": "Join the Discord§l ",
+        "color": "#dfbafd",
+        "click_event": {
+          "action": "open_url",
+          "url": "https://discord.gg/JjEEEsBHwe"
+        }
+      },
+      "width": 1
+    }
+  ],
+  "inputs": [],
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Cancel"
+    }
+  ]
+}

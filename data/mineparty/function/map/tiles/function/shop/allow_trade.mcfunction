@@ -1,0 +1,1 @@
+data modify entity @n[tag=shopkeeper] Offers set from entity @n[tag=shopkeeper] data.backup_offers

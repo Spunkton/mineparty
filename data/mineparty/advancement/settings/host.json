@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "host_settings": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineparty:settings/host/use"
+  }
+}

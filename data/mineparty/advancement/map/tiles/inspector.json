@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "tile_inspector": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineparty:map/tiles/inspector"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "container.0": {
+        "items": [
+          "minecraft:gold_ingot",
+          "minecraft:gold_nugget",
+          "minecraft:gold_block"
+        ]
+      }
+    }
+  }
+}

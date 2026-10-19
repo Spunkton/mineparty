@@ -1,0 +1,1 @@
+schedule function mineparty:game/round/turn/toast/revoke 2t

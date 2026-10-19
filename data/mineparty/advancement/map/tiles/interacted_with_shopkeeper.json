@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "bazingers": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "minecraft:entity_tags": {
+              "any_of": [
+                "shopkeeper"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineparty:map/tiles/function/shop/interacted_with_shopkeeper"
+  }
+}

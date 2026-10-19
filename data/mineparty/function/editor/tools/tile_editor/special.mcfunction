@@ -1,0 +1,1 @@
+$function mineparty:editor/tools/tile_editor/special/$(type) {UUID:$(UUID)}

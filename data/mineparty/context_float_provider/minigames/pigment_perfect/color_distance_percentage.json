@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:max",
+  "inputs": [
+    0,
+    {
+      "type": "minecraft:mul",
+      "inputs": [
+        100,
+        {
+          "type": "minecraft:sub",
+          "left": 1,
+          "right": {
+            "type": "minecraft:div",
+            "left": "mineparty:minigames/pigment_perfect/color_distance",
+            "right": 100
+          }
+        }
+      ]
+    }
+  ]
+}

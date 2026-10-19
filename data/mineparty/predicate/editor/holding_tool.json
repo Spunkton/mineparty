@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "weapon.mainhand": {
+        "predicates": {
+          "minecraft:custom_data": {
+            "editor_tool": true
+          }
+        }
+      }
+    }
+  }
+}

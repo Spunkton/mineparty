@@ -1,0 +1,2 @@
+data modify storage mineparty:main song append value {notes:[{type:"chime",pitch:1.5},{type:"flute",pitch:1},{type:"flute",pitch:1.33},{type:"flute",pitch:1.12}],tick:6}
+data modify storage mineparty:main song append value {notes:[{type:"flute",pitch:0.5},{type:"flute",pitch:0.67},{type:"flute",pitch:0.56}],tick:6}

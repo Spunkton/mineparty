@@ -1,0 +1,1 @@
+execute unless data entity @s Passengers run kill @s

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    500,
+    {
+      "type": "minecraft:sub",
+      "left": {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:div",
+          "left": "mineparty:minigames/pigment_perfect/rgb_to_xyz/x_a",
+          "right": 95.05
+        },
+        "exponent": {
+          "type": "minecraft:div",
+          "left": 1,
+          "right": 3
+        }
+      },
+      "right": {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:div",
+          "left": "mineparty:minigames/pigment_perfect/rgb_to_xyz/y_a",
+          "right": 100
+        },
+        "exponent": {
+          "type": "minecraft:div",
+          "left": 1,
+          "right": 3
+        }
+      }
+    }
+  ]
+}

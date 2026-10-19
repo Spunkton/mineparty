@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:sqrt",
+  "input": {
+    "type": "minecraft:add",
+    "inputs": [
+      {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:sub",
+          "left": "mineparty:minigames/pigment_perfect/xyz_to_lab/l_a",
+          "right": "mineparty:minigames/pigment_perfect/xyz_to_lab/l_b"
+        },
+        "exponent": 2
+      },
+      {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:sub",
+          "left": "mineparty:minigames/pigment_perfect/xyz_to_lab/a_a",
+          "right": "mineparty:minigames/pigment_perfect/xyz_to_lab/a_b"
+        },
+        "exponent": 2
+      },
+      {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:sub",
+          "left": "mineparty:minigames/pigment_perfect/xyz_to_lab/b_a",
+          "right": "mineparty:minigames/pigment_perfect/xyz_to_lab/b_b"
+        },
+        "exponent": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+# Single orbiting diamond
+summon item_display ~ ~ ~ {teleport_duration:3,Tags:["diamond_indicator","tile_indicator","orbit","clockwise","transit"],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,11.5f,3.5f],scale:[1f,1f,1f]},item:{id:"minecraft:diamond"}}

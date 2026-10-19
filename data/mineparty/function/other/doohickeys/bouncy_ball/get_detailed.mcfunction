@@ -1,0 +1,1 @@
+$give @s trident[item_model="magma_cream",custom_name={"italic":false,"text":"Custom Bouncy Ball"},custom_data={bouncy_ball:1b,bounce:$(bounce),texture:"$(texture)"},lore=[{"color":"white","italic":false,"text":"Bounciness: \u00a76$(bounce)/1000"}],max_stack_size=64,!max_damage,!tool,!attribute_modifiers] 1

@@ -1,0 +1,2 @@
+$execute store result score @s dice_roll run data get entity @s SelectedItem.components."minecraft:custom_data".values[$(value)]
+$execute unless data entity @s SelectedItem.components."minecraft:custom_data".dice store result score @s dice_roll run data get entity @s equipment.offhand.components."minecraft:custom_data".values[$(value)]

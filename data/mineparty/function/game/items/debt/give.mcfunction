@@ -1,0 +1,2 @@
+# Needs $(amount)
+$give @s poisonous_potato[custom_name={"italic":false,"text":"Debt"},lore=[{"color":"gray","italic":false,"text":"1 Debt = -1 Gold"}],!consumable,!food,item_model="bundle",custom_data={debt:true,game_item:true}] $(amount)

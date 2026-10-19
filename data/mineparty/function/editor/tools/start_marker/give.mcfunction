@@ -1,0 +1,1 @@
+give @p brick[consumable={consume_seconds:0,animation:"none",sound:"minecraft:block.beacon.activate",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:{sound_id:""}}]},item_model="beacon",custom_data={start_marker:true,editor_tool:true},custom_name={"italic":false,"text":"Start Marker"},max_stack_size=1] 1

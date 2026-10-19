@@ -1,0 +1,1 @@
+function mineparty:command with entity @s SelectedItem.components."minecraft:custom_data"

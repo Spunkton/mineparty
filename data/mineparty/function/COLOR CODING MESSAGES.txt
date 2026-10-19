@@ -1,0 +1,9 @@
+White = Basic stuff
+Aqua = Choice/ Interactable
+Light purple = Host messages
+Gold = Events/ server messages/ emphasis
+Green = Good
+Red = Bad/ Error
+Gray = Feedback/ confirmation
+
+Putting this here to stay consistent

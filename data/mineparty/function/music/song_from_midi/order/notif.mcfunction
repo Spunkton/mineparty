@@ -1,0 +1,1 @@
+$tellraw @s [{color:"gray",text:"> "},{text:"[Play song]",color:"green",click_event:{action:"run_command",command:"function mineparty:music/song_from_midi/play"}}," / ",{text:"[Copy json]",color:"aqua",click_event:{action:"copy_to_clipboard",value:'$(output)'}}]

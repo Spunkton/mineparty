@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:max",
+  "inputs": [
+    {
+      "type": "minecraft:sub",
+      "left": 100,
+      "right": "mineparty:minigames/pigment_perfect/total"
+    },
+    0
+  ]
+}

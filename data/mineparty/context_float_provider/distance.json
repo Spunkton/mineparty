@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:sqrt",
+  "input": {
+    "type": "minecraft:add",
+    "inputs": [
+      {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:sub",
+          "left": {
+            "type": "minecraft:storage",
+            "storage": "mineparty:math",
+            "path": "distance.pos_a[0]"
+          },
+          "right": {
+            "type": "minecraft:storage",
+            "storage": "mineparty:math",
+            "path": "distance.pos_b[0]"
+          }
+        },
+        "exponent": 2
+      },
+      {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:sub",
+          "left": {
+            "type": "minecraft:storage",
+            "storage": "mineparty:math",
+            "path": "distance.pos_a[1]"
+          },
+          "right": {
+            "type": "minecraft:storage",
+            "storage": "mineparty:math",
+            "path": "distance.pos_b[1]"
+          }
+        },
+        "exponent": 2
+      },
+      {
+        "type": "minecraft:pow",
+        "base": {
+          "type": "minecraft:sub",
+          "left": {
+            "type": "minecraft:storage",
+            "storage": "mineparty:math",
+            "path": "distance.pos_a[2]"
+          },
+          "right": {
+            "type": "minecraft:storage",
+            "storage": "mineparty:math",
+            "path": "distance.pos_b[2]"
+          }
+        },
+        "exponent": 2
+      }
+    ]
+  }
+}

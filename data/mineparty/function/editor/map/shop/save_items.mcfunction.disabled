@@ -1,0 +1,17 @@
+# Needs $(map)
+# Executed as player holding items for the shop
+
+# If player does not have a container in offhand
+#execute unless data entity @s equipment.offhand.components."minecraft:container"[] run tellraw @s {"color":"red","text":"ERROR: No container found in offhand."}
+#execute unless data entity @s equipment.offhand.components."minecraft:container"[] run return 0
+
+# If shop is already being edited
+#$execute if data storage mineparty:maps maps.$(map).shop.temp run tellraw @s {"color":"red","text":"ERROR: The shop of map_id:$(map) is already being edited."}
+#$execute if data storage mineparty:maps maps.$(map).shop.temp run return 0
+
+# Store item list and remove clutter
+#$data modify storage mineparty:maps maps.$(map).shop.items set value []
+#$data modify storage mineparty:maps maps.$(map).shop.items append from entity @s equipment.offhand.components."minecraft:container"[]
+#$data remove storage mineparty:maps maps.$(map).shop.items[].slot
+
+# Setup json for dialog

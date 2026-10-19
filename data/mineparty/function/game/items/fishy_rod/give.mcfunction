@@ -1,0 +1,1 @@
+give @s fishing_rod[unbreakable={},custom_name={"italic":false,"text":"Fishy Rod"},custom_data={fishy_rod:true,game_item:true,power:true},tooltip_display={hidden_components:["unbreakable"]},lore=[{"color":"gray","italic":false,"text":"Hook a player and steal an item!"}]] 1

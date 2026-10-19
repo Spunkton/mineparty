@@ -1,0 +1,1 @@
+$data remove storage mineparty:maps maps.$(map).shop.temp.pool[{item:$(item)}]

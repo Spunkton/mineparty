@@ -1,0 +1,2 @@
+summon item_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[1f,0f,0f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},billboard:"fixed",Tags:["dead_end_indicator","tile_indicator","editor_indicator"],item:{id:"minecraft:barrier",count:1},Glowing:false}
+summon item_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[1f,0f,0f,1f],translation:[0f,0f,0f],scale:[2f,2f,2f]},billboard:"fixed",Tags:["dead_end_indicator","tile_indicator","editor_indicator"],item:{id:"minecraft:compass",count:1},Glowing:false}

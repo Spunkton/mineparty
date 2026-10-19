@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:spyglass"
+    },
+    "title": {
+      "text": "Mine Party!"
+    },
+    "description": {
+      "text": "Not a lot of mining, but it sure is a great party!"
+    },
+    "background": "minecraft:block/white_wool",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "bazinga": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

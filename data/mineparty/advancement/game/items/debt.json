@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "money_money_monayyyy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": {
+                "debt": true
+              }
+            }
+          },
+          {
+            "items": "minecraft:gold_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineparty:game/items/debt/pay"
+  }
+}

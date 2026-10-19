@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "67": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:entity_tags": {
+              "none_of": [
+                "not_playing"
+              ]
+            }
+          }
+        },
+        "rod": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "fishy_rod": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mineparty:game/items/fishy_rod/hooked"
+  }
+}

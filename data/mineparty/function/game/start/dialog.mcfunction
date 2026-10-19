@@ -1,0 +1,3 @@
+# Opens dialog $(map) filled in as initial
+
+$dialog show @s {type:"minecraft:confirmation",title:"Start New Game","body":[{"type":"minecraft:item","item":{"id":"minecraft:allay_spawn_egg"}},{"type":"minecraft:plain_message","contents":{"color":"#acf1e9","text":"======= New Game ======="}}],inputs:[{type:"minecraft:text",key:"map",label:"Map id:",initial:"$(map)"},{type:"minecraft:number_range",key:"rounds",label:"Total rounds",start:1,end:50,step:1,initial:10}],yes:{label:"Start Game",action:{type:"minecraft:dynamic/run_command",template:"function mineparty:game/start {map:\"\u0024(map)\",rounds:\u0024(rounds)}"}},no:{label:"Cancel"}}

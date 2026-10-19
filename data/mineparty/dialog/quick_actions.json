@@ -1,0 +1,125 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Quick Actions",
+    "color": "white"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "======= Players =======",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:ender_pearl"
+      },
+      "description": {
+        "text": "Teleport everyone to you\u00a7l ",
+        "click_event": {
+          "action": "run_command",
+          "command": "tp @a @s"
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "======= Game =======",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:rabbit_foot"
+      },
+      "description": {
+        "text": "Skip current turn\u00a7l ",
+        "click_event": {
+          "action": "run_command",
+          "command": "function mineparty:game/round/turn/skip"
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:red_bed"
+      },
+      "description": {
+        "text": "Pause/unpause game\u00a7l ",
+        "click_event": {
+          "action": "run_command",
+          "command": "function mineparty:game/pause"
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:barrier"
+      },
+      "description": {
+        "text": "Cancel game\u00a7l ",
+        "color": "red",
+        "click_event": {
+          "action": "run_command",
+          "command": "function mineparty:game/abort"
+        },
+        "hover_event": {
+          "action": "show_text",
+          "value": "Cuts the game short without winner."
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "======= Timer =======",
+        "color": "gold"
+      }
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:clock"
+      },
+      "description": {
+        "text": "Set timer\u00a7l ",
+        "click_event": {
+          "action": "show_dialog",
+          "dialog": "mineparty:set_timer"
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:yellow_bed"
+      },
+      "description": {
+        "text": "Pause/unpause timer\u00a7l ",
+        "click_event": {
+          "action": "run_command",
+          "command": "function mineparty:timer/pause"
+        }
+      },
+      "width": 1
+    }
+  ],
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Cancel"
+    }
+  ]
+}

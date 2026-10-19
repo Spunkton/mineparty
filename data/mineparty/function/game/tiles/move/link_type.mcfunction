@@ -1,0 +1,2 @@
+# Tagging my shih so good
+$execute unless data entity @n[tag=move_update] data.links[{UUID:$(UUID),unlocked:true}] run data modify entity @n[type=marker,tag=tile,nbt={UUID:$(UUID)},tag=!move_past] data.temp.tile_check.amount set from entity @n[tag=move_update] data.links[{UUID:$(UUID)}].amount

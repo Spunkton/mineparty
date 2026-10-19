@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    100,
+    {
+      "type": "minecraft:add",
+      "inputs": [
+        {
+          "type": "minecraft:mul",
+          "inputs": [
+            0.2126,
+            {
+              "type": "minecraft:pow",
+              "base": {
+                "type": "minecraft:div",
+                "left": {
+                  "type": "minecraft:add",
+                  "inputs": [
+                    {
+                      "type": "minecraft:div",
+                      "left": {
+                        "type": "minecraft:storage",
+                        "storage": "mineparty:math",
+                        "path": "distance.color.rgb_b[0]"
+                      },
+                      "right": 255
+                    },
+                    0.055
+                  ]
+                },
+                "right": 1.055
+              },
+              "exponent": 2.4
+            }
+          ]
+        },
+        {
+          "type": "minecraft:mul",
+          "inputs": [
+            0.7152,
+            {
+              "type": "minecraft:pow",
+              "base": {
+                "type": "minecraft:div",
+                "left": {
+                  "type": "minecraft:add",
+                  "inputs": [
+                    {
+                      "type": "minecraft:div",
+                      "left": {
+                        "type": "minecraft:storage",
+                        "storage": "mineparty:math",
+                        "path": "distance.color.rgb_b[1]"
+                      },
+                      "right": 255
+                    },
+                    0.055
+                  ]
+                },
+                "right": 1.055
+              },
+              "exponent": 2.4
+            }
+          ]
+        },
+        {
+          "type": "minecraft:mul",
+          "inputs": [
+            0.0722,
+            {
+              "type": "minecraft:pow",
+              "base": {
+                "type": "minecraft:div",
+                "left": {
+                  "type": "minecraft:add",
+                  "inputs": [
+                    {
+                      "type": "minecraft:div",
+                      "left": {
+                        "type": "minecraft:storage",
+                        "storage": "mineparty:math",
+                        "path": "distance.color.rgb_b[2]"
+                      },
+                      "right": 255
+                    },
+                    0.055
+                  ]
+                },
+                "right": 1.055
+              },
+              "exponent": 2.4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

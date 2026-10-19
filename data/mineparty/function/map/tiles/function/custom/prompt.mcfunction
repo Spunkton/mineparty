@@ -1,0 +1,1 @@
+$dialog show @p[tag=host] {type:"minecraft:notice",title:["Prompt from \"","$(name)","\""],body:[{type:"minecraft:item",item:{id:"$(block)"}},{type:"minecraft:plain_message",contents:{text:"======= Prompt =======",color:"gold"}},{type:"minecraft:plain_message",contents:"$(prompt)"}]}

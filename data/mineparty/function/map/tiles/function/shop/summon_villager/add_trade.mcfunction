@@ -1,0 +1,1 @@
+$data modify entity @n[type=villager,tag=shopkeeper] Offers.Recipes append value {rewardExp:0b,maxUses:1,buy:{id:"minecraft:gold_ingot",count:$(cost)},sell:$(item)}

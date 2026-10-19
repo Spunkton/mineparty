@@ -1,0 +1,3 @@
+#Needs $(name), $(type), $(block), and $(map)
+
+$give @s warden_spawn_egg[entity_data={id:"minecraft:marker",Tags:["tile","new"],CustomName:"$(name)",data:{type:"$(type)",color:"white",map:"$(map)",block:"$(block)",structure:false,links:[]}},custom_name={"italic":false,"text":"Spawn $(name)"},custom_data={tile:$(type),editor_tool:true,tile_spawner:true},lore=[{"color":"gray","italic":false,"text":"Map: $(map)"},{"color":"gray","italic":false,"text":"Type: $(type)"}]] 1
