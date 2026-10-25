@@ -6,7 +6,9 @@ tag @e[type=marker,tag=tile] remove move_to_barrier
 tag @e[type=marker,tag=tile] remove move_to_key
 tag @e[type=marker,tag=tile] remove move_to_super_key
 tag @e[type=marker,tag=tile] remove move_to_toll
+tag @e[type=marker,tag=tile] remove move_to_command
 tag @e[type=marker,tag=tile] remove special_link
+tag @e[type=marker,tag=tile] remove command_link
 tag @e[type=marker,tag=tile] remove unlocked
 
 # Tag the links of the new tile
@@ -23,7 +25,8 @@ tag @e[type=marker,tag=tile,tag=link_toll,tag=!move_past,tag=!move_update] add m
 execute as @e[type=marker,tag=move_to] run data remove entity @s data.temp
 
 # Add link type data (amount)
-execute as @e[type=marker,tag=tile,tag=special_link] run function mineparty:game/tiles/move/link_type with entity @s
+execute as @e[type=marker,tag=tile,tag=special_link] run function mineparty:game/tiles/move/link/type with entity @s
+execute as @e[type=marker,tag=tile,tag=command_link] run function mineparty:game/tiles/move/link/command with entity @s
 
 # Clean up
 tag @e[type=marker,tag=tile] remove pivot

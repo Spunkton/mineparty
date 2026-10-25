@@ -22,5 +22,9 @@ scoreboard players set #song_from_midi_error_overstack mineparty 0
 # Convert to minecraft first
 function mineparty:music/song_from_midi/convert_to_minecraft/track
 
+# We cheat a little (does not work unfortunately)
+#execute store result storage mineparty:temp max_command_sequence_length int 1 run gamerule max_command_sequence_length
+#gamerule max_command_sequence_length 2147483647
+
 # Then order the notes
 function mineparty:music/song_from_midi/order

@@ -30,8 +30,11 @@ execute as @e[type=item,predicate=mineparty:item/is_gold] at @s on origin if ent
 execute as @e[type=item,predicate=mineparty:item/is_gold] at @s on origin if entity @s[tag=taking_turn,tag=!host] as @n[type=item,predicate=mineparty:item/is_gold] run data modify entity @s Owner set from entity @s Thrower
 execute as @e[type=item,predicate=mineparty:item/is_diamond] at @s on origin if entity @s[tag=!not_playing,tag=!host] as @n[type=item,predicate=mineparty:item/is_diamond] run data modify entity @s PickupDelay set value 0
 execute as @e[type=item,predicate=mineparty:item/is_diamond] at @s on origin if entity @s[tag=!not_playing,tag=!host] as @n[type=item,predicate=mineparty:item/is_diamond] run data modify entity @s Owner set from entity @s Thrower
+execute as @e[type=item,predicate=mineparty:item/is_debt] at @s on origin if entity @s[tag=!not_playing,tag=!host] as @n[type=item,predicate=mineparty:item/is_debt] run data modify entity @s PickupDelay set value 0
+execute as @e[type=item,predicate=mineparty:item/is_debt] at @s on origin if entity @s[tag=!not_playing,tag=!host] as @n[type=item,predicate=mineparty:item/is_debt] run data modify entity @s Owner set from entity @s Thrower
 execute as @e[type=item,predicate=mineparty:item/is_gold] on origin if entity @s[tag=taking_turn,tag=!host] run tellraw @s "\u00a7cYou cannot drop gold during your turn."
 execute as @e[type=item,predicate=mineparty:item/is_diamond] at @s on origin if entity @s[tag=!not_playing,tag=!host] run tellraw @s "\u00a7cDon't drop your diamonds, you need those!"
+execute as @e[type=item,predicate=mineparty:item/is_debt] at @s on origin if entity @s[tag=!not_playing,tag=!host] run tellraw @s "\u00a7cYou're not getting rid of debt that easily..."
 
 # Fancy time animation
 execute store result score #time mineparty run time query minecraft:day

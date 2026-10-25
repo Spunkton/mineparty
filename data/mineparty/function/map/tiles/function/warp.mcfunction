@@ -1,11 +1,11 @@
 # @s is player that landed
 
 # Check if there is a tag filter
-execute store result score #fail_check mineparty run data get entity @n[tag=tile,tag=landed_on] data.special.warp.tag
+execute store result score #fail_check mineparty run data get entity @n[tag=tile,tag=landed_on] data.special.tags
 
 # Tag all warp tiles
 function mineparty:map/tiles/function/warp/tag_warp with entity @n[tag=tile,tag=landed_on] data
-execute unless score #fail_check mineparty matches 0 run function mineparty:map/tiles/function/warp/tag_warp_and_tag with entity @n[tag=tile,tag=landed_on] data.special.warp
+execute unless score #fail_check mineparty matches 0 run function mineparty:map/tiles/function/warp/tag_warp_and_tag with entity @n[tag=tile,tag=landed_on] data.special
 
 # Reset and order scoreboard (we use the minigame one for this)
 ### Reset scores

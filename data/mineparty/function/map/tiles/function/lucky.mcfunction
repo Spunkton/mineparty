@@ -1,11 +1,11 @@
 # @s is player that landed
 
 # Check if there is a tag filter
-execute store result score #fail_check mineparty run data get entity @n[tag=tile] data.special.lucky.tag
+execute store result score #fail_check mineparty run data get entity @n[tag=tile] data.special.tags
 
 # Teleport
 execute if score #fail_check mineparty matches 0 run function mineparty:map/tiles/function/lucky/teleport with entity @n[tag=tile] data
-execute unless score #fail_check mineparty matches 0 run function mineparty:map/tiles/function/lucky/teleport_with_tag with entity @n[tag=tile] data.special.lucky
+execute unless score #fail_check mineparty matches 0 run function mineparty:map/tiles/function/lucky/teleport_with_tag with entity @n[tag=tile] data.special
 execute at @s run function mineparty:game/tiles/occupy
 execute at @s run particle minecraft:end_rod ~ ~ ~ 0.2 0 0.2 0.1 30
 particle minecraft:end_rod ~ ~ ~ 0.2 0 0.2 0.1 30

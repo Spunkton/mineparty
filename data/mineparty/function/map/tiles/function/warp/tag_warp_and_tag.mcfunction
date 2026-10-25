@@ -1,3 +1,3 @@
-# Needs $(tag)
+# Needs $(tags)
 
-$tag @e[type=marker,tag=warp,tag=!$(tag)] remove warp
+$tag @e[type=marker,tag=warp,tag=!$(tags)] remove warp

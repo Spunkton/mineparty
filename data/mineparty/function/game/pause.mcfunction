@@ -5,7 +5,7 @@ advancement revoke @s only mineparty:game/pause
 
 # Cancel if no the host
 execute unless entity @s[tag=host] run tellraw @a[tag=host] [{"color":"light_purple","text":""},{"selector":"@s"}," is requesting a pause."]
-execute unless entity @s[tag=host] run tellraw @s "\u00a7cOnly hosts can pause the game."
+execute unless entity @s[tag=host] run tellraw @s {"color":"gray","text":"<Helper> Sent a request to the host! Only hosts can pause the game."}
 execute unless entity @s[tag=host] run return 0
 
 # Change pause status

@@ -1,1 +1,0 @@
-give @p happy_ghast_spawn_egg[entity_data={id:"minecraft:marker",Tags:["tile","new"],CustomName:"Tile",data:{type:"blank",color:"white",map:"NaN",block:"pale_oak_planks",structure:false,links:[]}},custom_name={"italic":false,"text":"Blank Tile"},custom_data={tile:blank,editor_tool:true,tile_spawner:true}] 1

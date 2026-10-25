@@ -4,7 +4,7 @@ advancement revoke @s only mineparty:editor/tools/tile_editor
 function mineparty:editor/tag_selected
 
 # Cancel if no tiles are selected
-execute unless entity @n[tag=selected] run title @s actionbar {"color":"red","text":"No tiles selected."}
+execute unless entity @n[tag=selected] run title @s actionbar {"color":"red","text":"No tiles selected"}
 execute unless entity @n[tag=selected] run return 0
 
 # Set data

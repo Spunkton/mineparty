@@ -29,5 +29,5 @@ execute if data storage mineparty:main song_from_midi.input.tracks[0].notes[0] r
 execute if data storage mineparty:main song_from_midi.input.tracks[0].notes[0] run return run function mineparty:music/song_from_midi/convert_to_minecraft/note
 # Otherwise, return to track function
 execute unless data storage mineparty:main song_from_midi.input.tracks[0].notes[0] run scoreboard players add #song_from_midi_track mineparty 1
-execute unless data storage mineparty:main song_from_midi.input.tracks[0].notes[0] run tellraw @s [{"color":"gray","text":"Track "},{"score":{"objective":"mineparty","name":"#song_from_midi_track"}}," converted. (",{"score":{"objective":"mineparty","name":"#song_from_midi_note"}}," notes.)"]
+execute unless data storage mineparty:main song_from_midi.input.tracks[0].notes[0] run tellraw @s [{"color":"gray","text":"Track "},{"score":{"objective":"mineparty","name":"#song_from_midi_track"}}," converted. (Name: ",{"storage":"mineparty:main","nbt":"song_from_midi.input.tracks[0].name"},", Notes: ",{"score":{"objective":"mineparty","name":"#song_from_midi_note"}},")"]
 execute unless data storage mineparty:main song_from_midi.input.tracks[0].notes[0] run return run function mineparty:music/song_from_midi/convert_to_minecraft/track

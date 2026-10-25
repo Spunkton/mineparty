@@ -71,11 +71,24 @@
       "width": 1
     },
     {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "text": "======= Info =======",
-        "color": "gold"
-      }
+      "type": "minecraft:plain_message","contents": {"text": "======= Edit =======","color": "gold"}
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:brush"
+      },
+      "description": {
+        "text": "Map Tools§l ",
+        "click_event": {
+          "action": "show_dialog",
+          "dialog": "mineparty:credits"
+        }
+      },
+      "width": 1
+    },
+    {
+      "type": "minecraft:plain_message","contents": {"text": "======= Info =======","color": "gold"}
     },
     {
       "type": "minecraft:item",

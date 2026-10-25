@@ -11,3 +11,7 @@ $tellraw @a[tag=!taking_turn] ["",{"selector":"@p[tag=taking_turn]"}," landed on
 
 # Run tile function
 $execute as @p[tag=taking_turn] at @s run function mineparty:map/tiles/function/$(type)
+
+# Run bonus function if there
+execute store result score #fail_check mineparty run data get entity @n[tag=landed_on] data.command
+execute unless score #fail_check mineparty matches 0 run function mineparty:command with entity @n[tag=landed_on] data

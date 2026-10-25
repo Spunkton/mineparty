@@ -102,10 +102,13 @@ gamemode spectator @a[tag=not_playing,tag=!host]
 # Clear inventories
 clear @a[tag=!not_playing] *[custom_data~{dice:true}]
 clear @a[tag=!not_playing] *[custom_data~{game_item:true}]
-clear @a[tag=!not_playing] gold_ingot
-give @a[tag=!not_playing] gold_ingot 10
-clear @a[tag=!not_playing] diamond
 clear @a *[custom_data~{host_settings:true}]
+clear @a[tag=!not_playing] gold_ingot
+clear @a[tag=!not_playing] diamond
+
+# Give items
+give @a[tag=!not_playing] gold_ingot 10
+execute as @a run function mineparty:map/tiles/inspector/give
 execute as @a[tag=host] run function mineparty:settings/host/give
 
 # Give host "taking_turn" tag temporarily

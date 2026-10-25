@@ -8,9 +8,9 @@ data modify storage mineparty:main command_queue set value ["function mineparty:
 
 # Set prize money and pick game
 execute store result score #minigame_prize mineparty run data get storage mineparty:main playing_game.details.minigame_prize
-execute store result score #fail_check mineparty run data get entity @n[tag=tile,tag=landed_on] data.special.battle.tags
+execute store result score #fail_check mineparty run data get entity @n[tag=tile,tag=landed_on] data.special.tags
 execute if score #fail_check mineparty matches 0 run function mineparty:game/minigames/player_pick/tagged
-execute unless score #fail_check mineparty matches 0 run function mineparty:game/minigames/player_pick/tagged_custom with entity @n[tag=tile,tag=landed_on] data.special.battle
+execute unless score #fail_check mineparty matches 0 run function mineparty:game/minigames/player_pick/tagged_custom with entity @n[tag=tile,tag=landed_on] data.special
 
 # Notif
 tellraw @a "It's time to battle!"

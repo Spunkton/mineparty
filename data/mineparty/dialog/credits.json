@@ -173,6 +173,19 @@
         "id": "minecraft:player_head",
         "components": {
           "minecraft:profile": {
+            "name": "MoriGD"
+          }
+        }
+      },
+      "description": "MoriGD§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
             "name": "Nhaibar"
           }
         }
@@ -204,6 +217,19 @@
         }
       },
       "description": "Spunkton§l ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
+            "name": "calicozan"
+          }
+        }
+      },
+      "description": "Zan§l ",
       "width": 1
     },
     {
@@ -249,7 +275,7 @@
           }
         },
         {
-          "text": "\n\nWordpress thingy that allows midi to json conversion",
+          "text": "\n\nVisipiano thingy that allows midi to json conversion",
           "underlined": true,
           "click_event": {
             "action": "open_url",

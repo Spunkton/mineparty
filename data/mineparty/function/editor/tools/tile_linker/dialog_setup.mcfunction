@@ -2,11 +2,12 @@
 # Needs UUIDs $(from) and $(to)
 
 # Summon data holder
-$summon marker ~ ~ ~ {Tags:["dialog_data"],data:{from:$(from),to:$(to),amount:5,type:"default",key:false,super_key:false,toll:false,barrier:false}}
+$summon marker ~ ~ ~ {Tags:["dialog_data"],data:{from:$(from),to:$(to),amount:5,type:"default",command:"",key:false,super_key:false,toll:false,barrier:false}}
 
 # Get data from tile link
 $data modify entity @n[tag=dialog_data] data.type set from entity @n[type=marker,tag=tile,nbt={UUID:$(from)}] data.links[{UUID:$(to)}].type
 $data modify entity @n[tag=dialog_data] data.amount set from entity @n[type=marker,tag=tile,nbt={UUID:$(from)}] data.links[{UUID:$(to)}].amount
+$data modify entity @n[tag=dialog_data] data.command set from entity @n[type=marker,tag=tile,nbt={UUID:$(from)}] data.links[{UUID:$(to)}].command
 ### Get type
 $execute as @n[type=marker,tag=tile,nbt={UUID:$(from)}] if data entity @s data.links[{UUID:$(to),type:key}] run data modify entity @n[type=marker,tag=dialog_data] data.key set value true
 $execute as @n[type=marker,tag=tile,nbt={UUID:$(from)}] if data entity @s data.links[{UUID:$(to),type:super_key}] run data modify entity @n[type=marker,tag=dialog_data] data.super_key set value true

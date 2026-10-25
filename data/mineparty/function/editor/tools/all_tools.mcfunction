@@ -4,4 +4,4 @@ function mineparty:editor/tools/tile_editor/give
 function mineparty:editor/tools/tile_linker/give
 function mineparty:editor/tools/tag_editor/give
 function mineparty:editor/tools/map_editor/give
-function mineparty:editor/tiles/blank_tile
+function mineparty:editor/tools/tile_spawner/give

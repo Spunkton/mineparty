@@ -6,7 +6,7 @@
         "item": {
           "predicates": {
             "minecraft:custom_data": {
-              "tile_brush": true
+              "tile_eraser": true
             }
           }
         }
@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "mineparty:editor/tools/tile_brush"
+    "function": "mineparty:editor/tools/tile_eraser"
   }
 }

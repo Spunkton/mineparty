@@ -1,7 +1,7 @@
 # Needs $(game)
 
 # Fails if game is not there
-$execute unless data storage mineparty:main minigames.available[{id:"$(game)"}] run tellraw @a "\u00a7cError: Game not available."
+$execute unless data storage mineparty:main minigames.available[{id:"$(game)"}] run tellraw @a "\u00a7cGame not available."
 $execute unless data storage mineparty:main minigames.available[{id:"$(game)"}] run return 0
 
 # Reset ready scores

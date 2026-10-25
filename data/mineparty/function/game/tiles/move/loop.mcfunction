@@ -30,16 +30,18 @@ execute at @n[tag=move_update] run scoreboard players remove #steps mineparty 1
 execute as @n[tag=move_from] if entity @n[tag=move_update,distance=1..] run tag @e[tag=tile] remove move_past
 execute as @n[tag=move_from] if entity @n[tag=move_update,distance=1..] run tag @s add move_past
 execute as @n[tag=move_from] if entity @n[tag=move_update,distance=1..] run tag @s remove move_from
+### If the link has a command
+execute if entity @n[tag=move_update,tag=command_link] as @p[tag=moving] at @s run function mineparty:command with entity @n[tag=move_update,tag=command_link] data.temp.tile_check
 ### If the link to the tile is special
-execute if entity @n[tag=move_update,tag=special_link] run function mineparty:game/tiles/move/special_link with entity @n[tag=move_update,tag=special_link] data.temp.tile_check
-### If it is a no-passage tile
-execute unless score #steps mineparty matches ..0 if entity @n[tag=move_update,tag=no_passage] run tellraw @p[tag=moving] "\u00a7cLanded on an end tile! Ending turn..."
-execute if entity @n[tag=move_update,tag=no_passage] run scoreboard players set #steps mineparty 0
+execute if entity @n[tag=move_update,tag=special_link] run function mineparty:game/tiles/move/link/special with entity @n[tag=move_update,tag=special_link] data.temp.tile_check
 ### If it is a trapped tile
 execute if data entity @n[tag=move_update] data.modifiers[{id:"poison"}] run function mineparty:game/items/evoker_trap/activate
 ### If it is a diamond tile
 execute if entity @n[tag=move_update,tag=diamond] run function mineparty:game/tiles/move/passed_diamond
 execute if entity @n[tag=continue_from,tag=diamond] run return 1
+### If it is a no-passage tile
+execute unless score #steps mineparty matches ..0 if entity @n[tag=move_update,tag=no_passage] run tellraw @p[tag=moving] "\u00a7cLanded on an end tile! Ending turn..."
+execute if entity @n[tag=move_update,tag=no_passage] run scoreboard players set #steps mineparty 0
 ### Add move_to tag
 execute if entity @n[tag=move_update] run function mineparty:game/tiles/move/update/move_to
 ### End update (!!!)

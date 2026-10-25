@@ -1,5 +1,5 @@
 {
-  "description": "Tile Inspector",
+  "description": "Left Click Function",
   "supported_items": "minecraft:spyglass",
   "weight": 1,
   "max_level": 1,

@@ -10,10 +10,11 @@ scoreboard players enable @s mineparty_custom_trigger
 
 # Clear the current custom trigger
 data modify storage mineparty:main custom_trigger set value []
+data modify storage mineparty:main tellraw set value []
 
 # Decor
-tellraw @s "\u00a7l====={Pick a game!}====="
 tellraw @a[distance=.1..] ["",{"selector":"@s"}," is selecting a minigame..."]
+data modify storage mineparty:main tellraw append value ["",{"bold":true,"text":"====={Pick a game!}=====\n"}]
 
 # First option
 ### Pick game with tags
@@ -48,4 +49,8 @@ data modify storage mineparty:main minigames.pick.number set value 2
 ### Show option and set trigger
 function mineparty:game/minigames/player_pick/item with storage mineparty:main minigames.pick
 
-tellraw @s "========================="
+# Decor
+data modify storage mineparty:main tellraw append value "========================="
+
+# Show options
+function mineparty:tellraw with storage mineparty:main

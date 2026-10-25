@@ -4,6 +4,7 @@
 # Set data
 $data modify entity @n[type=marker,tag=tile,nbt={UUID:$(from)}] data.links[{UUID:$(to)}].type set value "$(type)"
 $data modify entity @n[type=marker,tag=tile,nbt={UUID:$(from)}] data.links[{UUID:$(to)}].amount set value $(amount)
+$data modify entity @n[type=marker,tag=tile,nbt={UUID:$(from)}] data.links[{UUID:$(to)}].command set value "$(command)"
 
 # If its reset to default
 $data remove entity @n[type=marker,tag=tile,nbt={UUID:$(from)}] data.links[{UUID:$(to),type:"default"}].amount

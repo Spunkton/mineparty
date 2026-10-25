@@ -44,7 +44,7 @@ execute at @p[tag=taking_turn] run particle minecraft:witch ~ ~ ~ 0.5 0 0.5 0.2 
 execute as @p[tag=taking_turn] at @s run playsound minecraft:entity.strider.happy player @s ~ ~ ~ 1 1.2 1
 execute as @p[tag=taking_turn] at @s run playsound minecraft:item.chorus_fruit.teleport player @s ~ ~ ~ 0.6 1.2 0.6
 ### Jingle
-function mineparty:music/play {song:"tiles/warp/finished"}
+function mineparty:music/play {song:"tiles/warp/end"}
 
 # Notif
 tellraw @p[tag=taking_turn] "You bid the Strider farewell..."

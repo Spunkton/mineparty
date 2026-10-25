@@ -12,8 +12,8 @@ execute store result score #minigame_prize mineparty run data get storage minepa
 # Notif
 tellraw @a "It's time to battle!"
 data modify entity @n[tag=helper] data.queue[] set value ["Grab your wallets, this game will be worth a lot more money!"]
-execute unless data entity @n[type=marker,tag=landed_on] data.special.battle.tags run data modify entity @n[tag=helper] data.command set value "function mineparty:game/minigames/player_pick/tagged"
-execute if data entity @n[type=marker,tag=landed_on] data.special.battle.tags run data modify entity @n[tag=helper] data.command set value "function mineparty:game/minigames/player_pick/tagged_custom with entity @n[type=marker,tag=landed_on] data.special.battle"
+execute unless data entity @n[type=marker,tag=landed_on] data.special.tags run data modify entity @n[tag=helper] data.command set value "function mineparty:game/minigames/player_pick/tagged"
+execute if data entity @n[type=marker,tag=landed_on] data.special.tags run data modify entity @n[tag=helper] data.command set value "function mineparty:game/minigames/player_pick/tagged_custom with entity @n[type=marker,tag=landed_on] data.special.battle"
 schedule function mineparty:game/helper/dialog/speak 2s
 
 # Effects

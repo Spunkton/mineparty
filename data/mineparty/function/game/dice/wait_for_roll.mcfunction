@@ -18,4 +18,4 @@ execute if data storage mineparty:main wait_for_roll_message.dice as @a[tag=!rol
 execute if data storage mineparty:main wait_for_roll_message.no_dice as @a[tag=!rolled_dice,tag=!not_playing] unless items entity @s weapon.* *[custom_data~{dice:true}] run title @s actionbar {"interpret":true,"nbt":"wait_for_roll_message.no_dice","storage":"mineparty:main"}
 
 # Give die if they don't have one
-execute as @a[tag=!no_die_at_roll,tag=!not_playing,tag=!dice_disabled] at @s unless items entity @s player *[minecraft:custom_data~{dice:true}] run function mineparty:game/dice/get/default
+execute as @a[tag=!no_die_at_roll,tag=!not_playing,tag=!dice_disabled] at @s unless items entity @s player *[minecraft:custom_data~{dice:true},!minecraft:custom_data~{special_dice:true}] run function mineparty:game/dice/get/default

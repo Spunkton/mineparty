@@ -2,11 +2,11 @@
 # Executed at the tile
 
 # Check if there is a tag filter
-execute store result score #fail_check mineparty run data get entity @n[tag=tile,tag=landed_on] data.special.redirect.tag
+execute store result score #fail_check mineparty run data get entity @n[tag=tile,tag=landed_on] data.special.tags
 
 # Teleport
 execute if score #fail_check mineparty matches 0 run function mineparty:map/tiles/function/redirect/teleport with entity @n[tag=tile,tag=landed_on] data
-execute unless score #fail_check mineparty matches 0 run function mineparty:map/tiles/function/redirect/teleport_with_tag with entity @n[tag=tile,tag=landed_on] data.special.redirect
+execute unless score #fail_check mineparty matches 0 run function mineparty:map/tiles/function/redirect/teleport_with_tags with entity @n[tag=tile,tag=landed_on] data.special
 execute at @s run function mineparty:game/tiles/occupy
 execute at @s run particle minecraft:end_rod ~ ~ ~ 0.2 0 0.2 0.1 30
 particle minecraft:end_rod ~ ~ ~ 0.2 0 0.2 0.1 30

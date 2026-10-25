@@ -1,4 +1,4 @@
-# Adds special tag to link
+# Adds special tags to link
 $tag @n[type=marker,tag=tile,nbt={UUID:$(UUID)}] add self
 $tag @n[tag=self] add link_$(type)
 tag @n[tag=self] add special_link

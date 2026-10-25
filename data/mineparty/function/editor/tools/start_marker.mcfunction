@@ -13,8 +13,8 @@ execute unless entity @n[tag=selected] run function mineparty:editor/tools/remov
 tag @n[tag=selected] add start
 
 # Notify
-execute unless predicate mineparty:sneaking run tellraw @s "Starting tile marked."
-execute if predicate mineparty:sneaking run tellraw @s "Extra starting tile added."
+execute if entity @n[tag=selected] unless predicate mineparty:sneaking run tellraw @s "Starting tile marked."
+execute if entity @n[tag=selected] if predicate mineparty:sneaking run tellraw @s "Extra starting tile added."
 execute unless entity @n[tag=selected] run tellraw @s {"color":"red","text":"Starting tile removed."}
 
 # Remove selected tag

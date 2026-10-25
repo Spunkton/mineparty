@@ -2,9 +2,9 @@
 
 # Summon base villager (hi Marco!)
 summon villager ~3 ~ ~ {NoGravity:1b,Invulnerable:1b,Team:"no_collision",attributes:[{id:"minecraft:movement_speed",base:0}],Tags:["shopkeeper"],CustomName:"Marco",VillagerData:{level:99,profession:"minecraft:librarian"}}
-execute if data entity @n[tag=tile] data.special.shop.direction.south run tp @n[tag=shopkeeper] ~ ~ ~3
-execute if data entity @n[tag=tile] data.special.shop.direction.west run tp @n[tag=shopkeeper] ~-3 ~ ~
-execute if data entity @n[tag=tile] data.special.shop.direction.north run tp @n[tag=shopkeeper] ~ ~ ~-3
+execute if data entity @n[tag=tile] {data:{special:{direction:"south"}}} run tp @n[tag=shopkeeper] ~ ~ ~3
+execute if data entity @n[tag=tile] {data:{special:{direction:"west"}}} run tp @n[tag=shopkeeper] ~-3 ~ ~
+execute if data entity @n[tag=tile] {data:{special:{direction:"north"}}} run tp @n[tag=shopkeeper] ~ ~ ~-3
 
 
 # Set up temp pool to play with

@@ -1,17 +1,18 @@
 # Ends game without winner
 
 # Clear schedules
+schedule clear mineparty:command_queue
 schedule clear mineparty:game/dice/wait_for_roll
-schedule clear mineparty:minigames/wait_for_ready
 schedule clear mineparty:game/start/introduction
 schedule clear mineparty:game/helper/dialog/line
-schedule clear mineparty:command_queue
 schedule clear mineparty:game/start/title_card/go_crazy
 schedule clear mineparty:game/start/title_card/second_half
 schedule clear mineparty:game/minigames/title/loop
 schedule clear mineparty:game/round/turn/begin
 schedule clear mineparty:game/scoreboard/update
 schedule clear mineparty:game/helper/follow
+schedule clear mineparty:minigames/wait_for_ready
+schedule clear mineparty:music/play/bit
 function mineparty:game/tiles/move/cancel
 function mineparty:map/tiles/function/warp/cancel
 function mineparty:minigames/abort
@@ -62,4 +63,4 @@ tag @a remove temp_not_playing
 effect clear @a glowing
 
 # Tellraw 
-tellraw @a[tag=host] "\u00a7cGame aborted."
+tellraw @a[tag=host] "\u00a7cGame cancelled."
