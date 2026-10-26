@@ -1,5 +1,5 @@
-# Runs the game-specific abort function
-function mineparty:minigames/abort/from_data with storage mineparty:main
+# Runs the game-specific cancel function
+function mineparty:minigames/cancel/from_data with storage mineparty:main
 
 # Cancel lobby schedule
 schedule clear mineparty:minigames/wait_for_ready

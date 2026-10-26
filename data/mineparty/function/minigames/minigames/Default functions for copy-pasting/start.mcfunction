@@ -1,5 +1,5 @@
 # Start function from Sulfurball 
-# Start functions are mandatory (just like lobby and abort functions), these run 3 seconds after everybody readies up.
+# Start functions are mandatory (just like lobby and cancel functions), these run 3 seconds after everybody readies up.
 # Note how the rulebook is not cleared by default, you have to clear them in the start function!
 
 # Clear previous ball

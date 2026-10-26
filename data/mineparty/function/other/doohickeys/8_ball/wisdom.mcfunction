@@ -5,7 +5,7 @@ advancement revoke @s only mineparty:other/doohickeys/8_ball
 function mineparty:other/pick_from_list {input:"storage mineparty:main quips.doohickeys.8_ball",output:"storage mineparty:main temp.quip"}
 
 # Give item back (consumed)
-execute unless entity @s[gamemode=creative] run function mineparty:other/doohickeys/8_ball/get
+execute unless entity @s[gamemode=creative] run function mineparty:other/doohickeys/8_ball/give
 
 # Speak!
 title @s subtitle {"storage":"mineparty:main","interpret":true,"nbt":"temp.quip"}

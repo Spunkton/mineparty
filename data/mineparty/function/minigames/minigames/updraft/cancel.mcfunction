@@ -2,7 +2,7 @@
 
 # Stops schedule
 schedule clear mineparty:minigames/minigames/updraft/tick
-function mineparty:timer/abort
+function mineparty:timer/cancel
 
 # Clean up
 ### Entities

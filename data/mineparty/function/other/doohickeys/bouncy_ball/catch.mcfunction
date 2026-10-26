@@ -1,5 +1,5 @@
 # Give ball (unless in creative and already has one)
-execute on target unless entity @s[gamemode=creative,nbt={Inventory:[{id:"minecraft:trident",components:{"minecraft:custom_data":{bouncy_ball:1b}}}]}] run function mineparty:other/doohickeys/bouncy_ball/get
+execute on target unless entity @s[gamemode=creative,nbt={Inventory:[{id:"minecraft:trident",components:{"minecraft:custom_data":{bouncy_ball:1b}}}]}] run function mineparty:other/doohickeys/bouncy_ball/give
 
 # Effects!
 playsound minecraft:entity.item.pickup player @a ~ ~ ~ 1 1

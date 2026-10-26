@@ -1,12 +1,12 @@
-# Abort function from Sulfurball
-# These are mandatory, these run when a game is aborted, or a minigame is aborted.
+# Cancel function from Sulfurball
+# These are mandatory, these run when a game is canceltld, or a minigame is cancelled.
 
 # Ends minigame immediately without winners
 
 # Stops schedule
 schedule clear mineparty:minigames/minigames/sulfurball/tick
 schedule clear mineparty:minigames/minigames/sulfurball/goal/return
-function mineparty:timer/abort
+function mineparty:timer/cancel
 
 # Clean up
 ### Entities

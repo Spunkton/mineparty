@@ -19,7 +19,7 @@
           }
         }
       },
-      "description": "Moofin§l ",
+      "description": "Moofin ",
       "width": 1
     },
     {
@@ -32,7 +32,7 @@
           }
         }
       },
-      "description": "Spunkton§l ",
+      "description": "Spunkton ",
       "width": 1
     },
     {
@@ -52,7 +52,7 @@
           }
         }
       },
-      "description": "Spunkton§l ",
+      "description": "Spunkton ",
       "width": 1
     },
     {
@@ -68,11 +68,24 @@
         "id": "minecraft:player_head",
         "components": {
           "minecraft:profile": {
+            "name": "Klomberrymen"
+          }
+        }
+      },
+      "description": "Klom \"Berry\" Men ",
+      "width": 1
+    },
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:player_head",
+        "components": {
+          "minecraft:profile": {
             "name": "Spuncton"
           }
         }
       },
-      "description": "Spunkton§l ",
+      "description": "Spunkton ",
       "width": 1
     },
     {
@@ -92,7 +105,7 @@
           }
         }
       },
-      "description": "Klom \"Berry\" Men§l ",
+      "description": "Klom \"Berry\" Men ",
       "width": 1
     },
     {
@@ -105,7 +118,7 @@
           }
         }
       },
-      "description": "Spunkton§l ",
+      "description": "Spunkton ",
       "width": 1
     },
     {
@@ -125,7 +138,7 @@
           }
         }
       },
-      "description": "HDfroggo§l ",
+      "description": "HDfroggo ",
       "width": 1
     },
     {
@@ -138,7 +151,7 @@
           }
         }
       },
-      "description": "Jhams§l ",
+      "description": "Jhams ",
       "width": 1
     },
     {
@@ -151,7 +164,7 @@
           }
         }
       },
-      "description": "Klom \"Berry\" Men§l ",
+      "description": "Klom \"Berry\" Men ",
       "width": 1
     },
     {
@@ -164,7 +177,7 @@
           }
         }
       },
-      "description": "Moofin§l ",
+      "description": "Moofin ",
       "width": 1
     },
     {
@@ -177,7 +190,7 @@
           }
         }
       },
-      "description": "MoriGD§l ",
+      "description": "Moriarty G. Dash ",
       "width": 1
     },
     {
@@ -190,7 +203,7 @@
           }
         }
       },
-      "description": "Nhaibar§l ",
+      "description": "Nhaibar ",
       "width": 1
     },
     {
@@ -203,7 +216,7 @@
           }
         }
       },
-      "description": "Nickel§l ",
+      "description": "Nickel ",
       "width": 1
     },
     {
@@ -216,7 +229,7 @@
           }
         }
       },
-      "description": "Spunkton§l ",
+      "description": "Spunkton ",
       "width": 1
     },
     {
@@ -229,7 +242,7 @@
           }
         }
       },
-      "description": "Zan§l ",
+      "description": "Zan ",
       "width": 1
     },
     {

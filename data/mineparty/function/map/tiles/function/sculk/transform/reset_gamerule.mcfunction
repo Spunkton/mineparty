@@ -1,0 +1,1 @@
+function mineparty:other/reset_gamerule with storage mineparty:main gamerule.fire_spread_radius_around_player

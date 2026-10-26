@@ -30,7 +30,7 @@ scoreboard players add #turn+1 mineparty 2
 execute if score #turn_phase mineparty matches 2 if score #turn+1 mineparty = player_count mineparty run scoreboard players add turn mineparty 1
 
 # Give 10 starting gold
-execute unless items entity @s player minecraft:gold_ingot run give @s gold_ingot 10
+execute unless items entity @s player minecraft:gold_ingot run function mineparty:game/items/gold/give {amount:10}
 
 # Tp to start
 $execute at @n[nbt={data:{map:"$(map)"}},tag=start,sort=random] run tp @s ~ ~ ~

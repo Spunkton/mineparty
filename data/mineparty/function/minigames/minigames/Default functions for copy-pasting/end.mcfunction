@@ -1,6 +1,6 @@
 # End function from Sulfurball
 # Not mandatory
-# Usually copies a lot from the abort function
+# Usually copies a lot from the cancel function
 # Note that *actually* ending the minigame (eg. removing the "playing_minigame" data from the main storage) is not scheduled by default! You have to add it to the end function (or somewhere else).
 
 # Ends minigame
@@ -12,7 +12,7 @@ execute if score Pink minigames_teams = Blue minigames_teams unless score #golde
 # Stops schedule
 schedule clear mineparty:minigames/minigames/sulfurball/tick
 schedule clear mineparty:minigames/minigames/sulfurball/goal/return
-function mineparty:timer/abort
+function mineparty:timer/cancel
 
 # Signal
 title @a title "Game over!"

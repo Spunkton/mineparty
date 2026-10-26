@@ -1,0 +1,3 @@
+# Needs $(UUID)
+$execute if entity @p[tag=taking_turn,nbt={UUID:$(UUID)}] run tellraw @s ["> ",{"player":{"id":$(UUID)}},"\u00a7a - ",{"score":{"name":"#turn_order_line","objective":"mineparty"}},"\u00a7a - ",{"selector":"@s"}]
+$execute if entity @p[tag=!taking_turn,nbt={UUID:$(UUID)}] run tellraw @s ["\u00a7l \u00a7r ",{"player":{"id":$(UUID)}},"\u00a7a - ",{"score":{"name":"#turn_order_line","objective":"mineparty"}},"\u00a7a - ",{"selector":"@s"}]

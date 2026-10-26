@@ -9,7 +9,7 @@ execute as @e[type=fishing_bobber,tag=fishy_bobber] at @s on origin if entity @s
 # Steal item
 execute unless items entity @p[tag=fishy_hooked] mineparty:game/has_game_item * run tellraw @a ["",{"selector":"@s"}," stole \u00a765 gold\u00a7r from ",{"selector":"@p[tag=fishy_hooked]"},"!"]
 execute unless items entity @p[tag=fishy_hooked] mineparty:game/has_game_item * run clear @p[tag=fishy_hooked] gold_ingot 5
-execute unless items entity @p[tag=fishy_hooked] mineparty:game/has_game_item * run give @s gold_ingot 5
+execute unless items entity @p[tag=fishy_hooked] mineparty:game/has_game_item * run function mineparty:game/items/gold/give {amount:5}
 execute if items entity @p[tag=fishy_hooked] mineparty:game/has_game_item * run function mineparty:game/items/fishy_rod/steal
 
 # Effects!

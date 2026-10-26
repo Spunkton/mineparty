@@ -18,4 +18,4 @@ item replace entity @s weapon.mainhand from entity @n[tag=give_item] container.0
 kill @n[tag=give_item]
 
 # Debug notif
-tellraw @s[tag=debug] {"color":"gray","text":"Tile Spawner cleared."}
+tellraw @s[tag=debug] {"color":"yellow","text":"Tile Spawner cleared."}

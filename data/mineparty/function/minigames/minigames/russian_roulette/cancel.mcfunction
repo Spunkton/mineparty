@@ -13,7 +13,7 @@ schedule clear mineparty:minigames/minigames/russian_roulette/next_player
 schedule clear mineparty:minigames/minigames/russian_roulette/next_player/after_kill
 schedule clear mineparty:minigames/minigames/russian_roulette/end
 schedule clear mineparty:minigames/minigames/russian_roulette/alone/notif
-function mineparty:timer/abort
+function mineparty:timer/cancel
 
 # Clean up
 ### Bullet display

@@ -32,10 +32,11 @@ team modify Blue color aqua
 team modify Pink color light_purple
 
 # Storage setup
-function mineparty:load/quips
-function mineparty:load/minigame_list
-function mineparty:load/map_defaults
 function mineparty:load/enum_check
+function mineparty:load/loot_tables
+function mineparty:load/map_defaults
+function mineparty:load/minigame_list
+function mineparty:load/quips
 
 # Set spawn location
 kill @e[type=marker,tag=world_spawn]

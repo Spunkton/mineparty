@@ -25,7 +25,7 @@ playsound minecraft:ui.loom.take_result player @s ~ ~ ~ 0.6 2
 execute at @n[tag=selected] run particle instant_effect{color:[1.000,1.000,1.000]} ~ ~ ~ 0.75 0 0.75 0 32 normal @s
 
 # Notify
-tellraw @s[tag=debug] {"color":"gray","text":"Copied Tile."}
+tellraw @s[tag=debug] {"color":"yellow","text":"Copied Tile."}
 
 # Clean up
 tag @e[tag=tile] remove selected

@@ -26,6 +26,7 @@ execute as @e[type=marker,tag=tile,tag=start] at @s unless entity @n[tag=start_i
 execute as @e[type=marker,tag=tile,tag=no_passage] at @s unless entity @n[tag=no_passage_indicator,distance=..3] run summon item_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[1f,0f,0f,1f],translation:[-0.625f,0f,1.875f],scale:[0.5f,0.1f,0.5f]},billboard:"fixed",Tags:["editor_indicator","no_passage_indicator","tile_indicator","editor_indicator"],item:{id:"minecraft:bricks",count:1}}
 execute as @e[type=marker,tag=tile,tag=no_diamond] at @s unless entity @n[tag=no_diamond_indicator,distance=..3] run function mineparty:map/indicator/no_diamond
 execute as @e[type=marker,tag=tile,tag=no_warp] at @s unless entity @n[tag=no_warp_indicator,distance=..3] run function mineparty:map/indicator/no_warp
+execute as @e[type=marker,tag=tile,tag=no_transform] at @s unless entity @n[tag=no_transform_indicator,distance=..3] run function mineparty:map/indicator/no_transform
 execute as @e[type=marker,tag=tile,tag=dead_end] at @s unless entity @n[tag=dead_end_indicator,distance=..3] run function mineparty:map/indicator/dead_end
 execute as @e[type=marker,tag=tile] at @s unless entity @n[tag=tile_border_indicator,distance=..3] if entity @p[distance=..64,predicate=mineparty:editor/holding_tool] run function mineparty:map/indicator/tile
 
@@ -42,6 +43,7 @@ execute as @e[tag=start_indicator] at @s unless entity @n[tag=tile,tag=start,dis
 execute as @e[tag=no_passage_indicator] at @s unless entity @n[tag=tile,tag=no_passage,distance=..3] run kill @s
 execute as @e[tag=no_diamond_indicator] at @s unless entity @n[tag=tile,tag=no_diamond,distance=..3] run kill @s
 execute as @e[tag=no_warp_indicator] at @s unless entity @n[tag=tile,tag=no_warp,distance=..3] run kill @s
+execute as @e[tag=no_transform_indicator] at @s unless entity @n[tag=tile,tag=no_transform,distance=..3] run kill @s
 execute as @e[tag=dead_end_indicator] at @s unless entity @n[tag=tile,tag=dead_end,distance=..3] run kill @s
 execute as @e[type=marker,tag=tile,tag=pointed] at @s run kill @e[tag=tile_border_indicator,distance=..3]
 

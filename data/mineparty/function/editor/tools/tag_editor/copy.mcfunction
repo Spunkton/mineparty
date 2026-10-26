@@ -38,8 +38,8 @@ execute if score #fail_check mineparty matches ..2 run playsound minecraft:block
 kill @n[type=marker,name=temp_data]
 
 # Notify
-execute if score #fail_check mineparty matches 3.. run tellraw @s[tag=debug] {"color":"gray","text":"Copied tags."}
-execute if score #fail_check mineparty matches ..2 run tellraw @s[tag=debug] {"color":"gray","text":"No tags found, swapped to eraser."}
+execute if score #fail_check mineparty matches 3.. run tellraw @s[tag=debug] {"color":"yellow","text":"Copied tags."}
+execute if score #fail_check mineparty matches ..2 run tellraw @s[tag=debug] {"color":"yellow","text":"No tags found, swapped to eraser."}
 
 # Effects
 execute at @n[tag=selected] run particle instant_effect{color:[0.800,1.000,0.600]} ~ ~ ~ 0.75 0 0.75 0 32 normal @s

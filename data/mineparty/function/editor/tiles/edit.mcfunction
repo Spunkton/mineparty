@@ -3,6 +3,7 @@
 
 # Check if tile type is valid
 $execute unless data storage mineparty:main {enum:{map:{tiles:{valid:["$(type)"]}}}} run tellraw @s {"color":"red","text":"Type \"$(type)\" is not a valid tile type."}
+$execute unless data storage mineparty:main {enum:{map:{tiles:{valid:["$(type)"]}}}} run tellraw @s [{"color":"red","text":"Hover "},{"underlined":true,"text":"here","hover_event":{"action":"show_text","value":{"nbt":"enum.map.tiles.valid","storage":"mineparty:main"}}}," to see all the valid tile types."]
 $execute unless data storage mineparty:main {enum:{map:{tiles:{valid:["$(type)"]}}}} run return fail
 
 # Set data

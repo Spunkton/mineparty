@@ -1,6 +1,6 @@
 # @s is player that landed
 clear @s *[custom_data~{debt:true}]
-give @s gold_ingot 10
+function mineparty:game/items/gold/give {amount:10}
 
 # Notif
 tellraw @s "You gained \u00a7610\u00a7r gold! Yowza!"

@@ -24,7 +24,7 @@ playsound minecraft:ui.loom.take_result player @s ~ ~ ~ 0.6 2
 execute at @n[tag=selected] run particle item{item:"sculk"} ~ ~ ~ 0.5 0 0.5 0.1 32 normal @s
 
 # Notify
-tellraw @s[tag=debug] {"color":"gray","text":"Copied Tile."}
+tellraw @s[tag=debug] {"color":"yellow","text":"Copied Tile."}
 
 # Clean up
 tag @e[tag=tile] remove selected

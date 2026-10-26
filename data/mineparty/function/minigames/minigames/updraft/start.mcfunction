@@ -55,4 +55,4 @@ function mineparty:multi_command {amount:5,command:"function mineparty:minigames
 give @a[tag=!not_playing] mace[minimum_attack_charge=0.8,enchantments={"wind_burst":1},attribute_modifiers=[{id:"attack_speed",type:"attack_speed",amount:-0.7,operation:"add_multiplied_total",slot:"mainhand",display:{type:"hidden"}},{id:"attack_damage",type:"attack_damage",amount:1,operation:"add_value",slot:"mainhand",display:{type:"hidden"}},{id:"entity_interaction_range",type:"entity_interaction_range",amount:1.5,operation:"add_value",slot:"mainhand",display:{type:"override",value:{"color":"gold","text":"+1.5 Attack Range"}}}],custom_data={updraft_mace:true},unbreakable={}] 1
 
 # Music!
-function mineparty:music/play {song:"minigames/tense/twisted_ravagers"}
+#function mineparty:music/play {song:"minigames/tense/twisted_ravagers"}

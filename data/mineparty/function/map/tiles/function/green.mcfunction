@@ -1,5 +1,5 @@
 # @s is player that landed
-give @s gold_ingot 3
+function mineparty:game/items/gold/give {amount:3}
 
 # Notif
 tellraw @s "You gained \u00a763\u00a7r gold!"

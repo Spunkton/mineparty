@@ -1,9 +1,9 @@
-# Needs $(map) and $(rounds)
+# Needs $(map), $(rounds), $(settings)
 
 # Cancel if game is already ongoing
 execute if data storage mineparty:main playing_game run title @s actionbar "\u00a7cGame is already ongoing!"
 execute if data storage mineparty:main playing_game run playsound minecraft:block.bell.use player @s
-execute if data storage mineparty:main playing_game run tellraw @s "To force the current game to end, use \"/function mineparty:game/abort\"."
+execute if data storage mineparty:main playing_game run tellraw @s "To force the current game to end, use \"/function mineparty:game/cancel\"."
 execute if data storage mineparty:main playing_game run return 0
 
 # Cancel if there is no host
@@ -38,8 +38,8 @@ schedule clear mineparty:game/start/title_card/second_half
 schedule clear mineparty:game/minigames/title/loop
 schedule clear mineparty:game/round/turn/begin
 function mineparty:game/tiles/move/cancel
-function mineparty:minigames/abort
-function mineparty:timer/abort
+function mineparty:minigames/cancel
+function mineparty:timer/cancel
 
 # Clear queues
 data remove entity @n[tag=helper] data.queue
@@ -83,6 +83,7 @@ scoreboard objectives setdisplay list mineparty_rank
 # We're gaming now
 data modify storage mineparty:main playing_game.mode set value "ffa"
 $data modify storage mineparty:main playing_game.map set value "$(map)"
+$data modify storage mineparty:main playing_game.settings set value $(settings)
 
 # Map data
 $execute store result storage mineparty:main playing_game.details.minigame_prize int 1 run data get storage mineparty:maps maps.$(map).minigame_prize
@@ -107,7 +108,7 @@ clear @a[tag=!not_playing] gold_ingot
 clear @a[tag=!not_playing] diamond
 
 # Give items
-give @a[tag=!not_playing] gold_ingot 10
+execute as @a[tag=!not_playing] run function mineparty:game/items/gold/give {amount:10}
 execute as @a run function mineparty:map/tiles/inspector/give
 execute as @a[tag=host] run function mineparty:settings/host/give
 

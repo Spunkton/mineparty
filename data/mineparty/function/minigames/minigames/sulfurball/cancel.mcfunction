@@ -3,7 +3,7 @@
 # Stops schedule
 schedule clear mineparty:minigames/minigames/sulfurball/tick
 schedule clear mineparty:minigames/minigames/sulfurball/goal/return
-function mineparty:timer/abort
+function mineparty:timer/cancel
 
 # Clean up
 ### Entities

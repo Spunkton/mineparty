@@ -1,2 +1,0 @@
-kill @e[tag=test]
-execute at @n[tag=tile] run summon block_display ~ ~ ~ {Tags:["test"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.999f,-0.5f],scale:[1f,1f,1f]},block_state:{id:"minecraft:sculk"}}

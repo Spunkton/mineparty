@@ -1,0 +1,2 @@
+# Needs $(amount) and $(UUID)
+$data modify storage mineparty:main playing_game.stats[{UUID:$(UUID)}].total_gold set compute default integer {type:"minecraft:add",inputs:[{type:"minecraft:storage",storage:"mineparty:main",path:"playing_game.stats[{UUID:$(UUID)}].total_gold"},$(amount)]}

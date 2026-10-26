@@ -1,7 +1,7 @@
 # Ends minigame
 
 # Stops schedule
-function mineparty:timer/abort
+function mineparty:timer/cancel
 
 # Score everyone
 execute as @a[tag=!not_playing] run function mineparty:minigames/minigames/pigment_perfect/score

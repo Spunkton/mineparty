@@ -16,7 +16,7 @@ execute if score #coin_result mineparty matches 1 on passengers on target run ti
 execute if score #coin_result mineparty matches 1 on passengers on target run tellraw @s "Tails!"
 
 # Give player the coin back
-execute on passengers on target run function mineparty:other/doohickeys/coin/get
+execute on passengers on target run function mineparty:other/doohickeys/coin/give
 
 # Kill self and passengers
 execute on passengers run kill @s

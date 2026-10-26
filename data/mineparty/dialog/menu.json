@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:multi_action",
+  "type": "minecraft:notice",
   "title": {
     "text": "Mine Party Main Menu",
     "color": "#b8eae6",
@@ -18,7 +18,7 @@
       "color": "white"
     },
     {
-      "text": " Mine Party Menu§l ",
+      "text": " Mine Party Menu ",
       "color": "#b8eae6"
     },
     {
@@ -36,6 +36,16 @@
   "body": [
     {
       "type": "minecraft:plain_message",
+      "contents": [
+        [{"color":"#000000","italic":false,"text":"\n §l §r §l §r"},{"color":"#22CFFF","text":"█"},{"color":"#4CE9FF","text":"█"},{"color":"#000000","text":" §l §r §l §r §l §r §l §r"},{"color":"#9CFCFF","text":"█"},{"color":"#80FCFF","text":"███"},{"color":"#9CFCFF","text":"█"},{"color":"#000000","text":" §l §r §l §r §l §r §l §r"},{"color":"#4CE9FF","text":"█"},{"color":"#22CFFF","text":"█"},{"color":"#000000","text":" §l §r §l §r\n"},{"color":"#429BDA","text":"█"},{"color":"#28B3E8","text":"██"},{"color":"#22CFFF","text":"█"},{"color":"#000000","text":" §l §r §l §r §l §r §l §r"},{"color":"#64FBFF","text":"█"},{"color":"#3DE0F7","text":"███"},{"color":"#64FBFF","text":"█"},{"color":"#000000","text":" §l §r §l §r §l §r §l §r"},{"color":"#22CFFF","text":"█"},{"color":"#28B3E8","text":"██"},{"color":"#429BDA","text":"█\n"},{"color":"#000000","text":" §l §r §l §r §l §r"},{"color":"#22CFFF","text":"█"},{"color":"#4CE9FF","text":"█"},{"color":"#000000","text":" §l §r §l §r §l §r"},{"color":"#3DE0F7","text":"█"},{"color":"#FFFFFF","text":"█"},{"color":"#3DE0F7","text":"█"},{"color":"#FFFFFF","text":"█"},{"color":"#3DE0F7","text":"█"},{"color":"#000000","text":" §l §r §l §r §l §r"},{"color":"#4CE9FF","text":"█"},{"color":"#22CFFF","text":"█"},{"color":"#000000","text":" §l §r §l §r §l §r\n §l §r §l §r §l §r"},{"color":"#28B3E8","text":"█"},{"color":"#22CFFF","text":"██"},{"color":"#000000","text":" §l §r §l §r"},{"color":"#4CE9FF","text":"█"},{"color":"#FFFFFF","text":"█"},{"color":"#4CE9FF","text":"█"},{"color":"#FFFFFF","text":"█"},{"color":"#4CE9FF","text":"█"},{"color":"#000000","text":" §l §r §l §r"},{"color":"#22CFFF","text":"██"},{"color":"#28B3E8","text":"█"},{"color":"#000000","text":" §l §r §l §r §l §r\n §l §r §l §r"},{"color":"#429BDA","text":"█"},{"color":"#28B3E8","text":"█"},{"color":"#000000","text":" §l §r"},{"color":"#28B3E8","text":"█"},{"color":"#22CFFF","text":"█"},{"color":"#28B3E8","text":"█"},{"color":"#2CD5EC","text":"█"},{"color":"#3DE0F7","text":"███"},{"color":"#2CD5EC","text":"█"},{"color":"#28B3E8","text":"█"},{"color":"#22CFFF","text":"█"},{"color":"#28B3E8","text":"█"},{"color":"#000000","text":" §l §r"},{"color":"#28B3E8","text":"█"},{"color":"#429BDA","text":"█"},{"color":"#000000","text":" §l §r §l §r"}],
+        "\n",
+        {"text": "\n §l §r█▀▄▀█ §l §r█ §l §r█▄ §l §r█ §l §r█▀▀ §l §r█▀█ §l §r▄▀█ §l §r█▀█ §l §r▀█▀ §l §r█▄█","color": "#acf1e9"},
+        {"text": "\n §l §r█ §l §r▀ §l §r█ §l §r█ §l §r█ §l §r▀█ §l §r██▄ §l §r█▀▀ §l §r█▀█ §l §r█▀▄ §l §r §l §r█ §l §r §l §r §l §r█ §l §r\n\n§fBeta v0.5","color": "#acf1e9"}
+      ],
+      "width":360
+    },
+    {
+      "type": "minecraft:plain_message",
       "contents": {
         "text": "======= Gameplay =======",
         "color": "gold"
@@ -47,7 +57,7 @@
         "id": "minecraft:allay_spawn_egg"
       },
       "description": {
-        "text": "New Game§l ",
+        "text": "New Game",
         "color": "#acf1e9",
         "click_event": {
           "action": "run_command",
@@ -62,7 +72,7 @@
         "id": "minecraft:writable_book"
       },
       "description": {
-        "text": "Settings§l ",
+        "text": "Settings",
         "click_event": {
           "action": "run_command",
           "command": "trigger settings"
@@ -79,7 +89,7 @@
         "id": "minecraft:brush"
       },
       "description": {
-        "text": "Map Tools§l ",
+        "text": "Map Tools",
         "click_event": {
           "action": "show_dialog",
           "dialog": "mineparty:credits"
@@ -101,7 +111,7 @@
         }
       },
       "description": {
-        "text": "Credits§l ",
+        "text": "Credits",
         "click_event": {
           "action": "show_dialog",
           "dialog": "mineparty:credits"
@@ -125,7 +135,7 @@
         }
       },
       "description": {
-        "text": "Join the Discord§l ",
+        "text": "Join the Discord",
         "color": "#dfbafd",
         "click_event": {
           "action": "open_url",
@@ -135,11 +145,9 @@
       "width": 1
     }
   ],
-  "inputs": [],
   "columns": 1,
-  "actions": [
-    {
-      "label": "Cancel"
-    }
-  ]
+  "actions":
+  {
+    "label": "Cancel"
+  }
 }

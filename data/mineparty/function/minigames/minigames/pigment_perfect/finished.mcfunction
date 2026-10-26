@@ -2,7 +2,7 @@
 
 # Stops schedule
 schedule clear mineparty:minigames/minigames/pigment_perfect/tick
-function mineparty:timer/abort
+function mineparty:timer/cancel
 
 # Signal
 title @a title "Finished!"

@@ -22,6 +22,7 @@ data modify entity @n[tag=selected] data.temp.UUID set from entity @n[tag=select
 ### False
 data modify entity @n[tag=selected,tag=!no_diamond] data.temp.no_diamond set value "false"
 data modify entity @n[tag=selected,tag=!no_warp] data.temp.no_warp set value "false"
+data modify entity @n[tag=selected,tag=!no_transform] data.temp.no_transform set value "false"
 data modify entity @n[tag=selected,tag=!no_passage] data.temp.no_passage set value "false"
 data modify entity @n[tag=selected,tag=!lucky_warp] data.temp.lucky_warp set value "false"
 data modify entity @n[tag=selected,tag=!redirect_warp] data.temp.redirect_warp set value "false"
@@ -29,6 +30,7 @@ data modify entity @n[tag=selected,tag=!start] data.temp.start set value "false"
 ### True
 data modify entity @n[tag=selected,tag=no_diamond] data.temp.no_diamond set value "true"
 data modify entity @n[tag=selected,tag=no_warp] data.temp.no_warp set value "true"
+data modify entity @n[tag=selected,tag=no_transform] data.temp.no_transform set value "true"
 data modify entity @n[tag=selected,tag=no_passage] data.temp.no_passage set value "true"
 data modify entity @n[tag=selected,tag=lucky_warp] data.temp.lucky_warp set value "true"
 data modify entity @n[tag=selected,tag=redirect_warp] data.temp.redirect_warp set value "true"
@@ -43,6 +45,7 @@ tag @n[type=marker,name=temp_data] remove tile
 tag @n[type=marker,name=temp_data] remove pointed
 tag @n[type=marker,name=temp_data] remove no_diamond
 tag @n[type=marker,name=temp_data] remove no_warp
+tag @n[type=marker,name=temp_data] remove no_transform
 tag @n[type=marker,name=temp_data] remove no_passage
 tag @n[type=marker,name=temp_data] remove lucky_warp
 tag @n[type=marker,name=temp_data] remove redirect_warp

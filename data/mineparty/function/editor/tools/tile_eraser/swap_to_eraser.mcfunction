@@ -13,4 +13,4 @@ item replace entity @s weapon.mainhand from entity @n[tag=give_item] container.0
 kill @n[tag=give_item]
 
 # Debug notif
-tellraw @s[tag=debug] {"color":"gray","text":"Replaced item with Tile Eraser cleared."}
+tellraw @s[tag=debug] {"color":"yellow","text":"Replaced item with Tile Eraser cleared."}

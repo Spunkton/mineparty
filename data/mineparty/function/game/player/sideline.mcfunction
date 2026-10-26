@@ -16,7 +16,7 @@ tag @s remove player
 tag @s remove temp_not_playing
 
 # Give 10 starting gold (if they have no gold)
-execute unless items entity @s player minecraft:gold_ingot run give @s gold_ingot 10
+execute unless items entity @s player minecraft:gold_ingot run function mineparty:game/items/gold/give {amount:10}
 
 # Clear game items (they won't need them)
 clear @s *[custom_data~{game_item:true}]

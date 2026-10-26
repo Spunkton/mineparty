@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:multi_action",
+  "type": "minecraft:notice",
   "title": {
     "text": "Quick Actions",
     "color": "white"
@@ -18,7 +18,7 @@
         "id": "minecraft:ender_pearl"
       },
       "description": {
-        "text": "Teleport everyone to you\u00a7l ",
+        "text": "Teleport everyone to you ",
         "click_event": {
           "action": "run_command",
           "command": "tp @a @s"
@@ -39,7 +39,7 @@
         "id": "minecraft:rabbit_foot"
       },
       "description": {
-        "text": "Skip current turn\u00a7l ",
+        "text": "Skip current turn ",
         "click_event": {
           "action": "run_command",
           "command": "function mineparty:game/round/turn/skip"
@@ -53,7 +53,7 @@
         "id": "minecraft:red_bed"
       },
       "description": {
-        "text": "Pause/unpause game\u00a7l ",
+        "text": "Pause/unpause game ",
         "click_event": {
           "action": "run_command",
           "command": "function mineparty:game/pause"
@@ -67,11 +67,11 @@
         "id": "minecraft:barrier"
       },
       "description": {
-        "text": "Cancel game\u00a7l ",
+        "text": "Cancel game ",
         "color": "red",
         "click_event": {
           "action": "run_command",
-          "command": "function mineparty:game/abort"
+          "command": "function mineparty:game/cancel"
         },
         "hover_event": {
           "action": "show_text",
@@ -93,7 +93,7 @@
         "id": "minecraft:clock"
       },
       "description": {
-        "text": "Set timer\u00a7l ",
+        "text": "Set timer ",
         "click_event": {
           "action": "show_dialog",
           "dialog": "mineparty:set_timer"
@@ -107,7 +107,7 @@
         "id": "minecraft:yellow_bed"
       },
       "description": {
-        "text": "Pause/unpause timer\u00a7l ",
+        "text": "Pause/unpause timer ",
         "click_event": {
           "action": "run_command",
           "command": "function mineparty:timer/pause"
@@ -117,9 +117,8 @@
     }
   ],
   "columns": 1,
-  "actions": [
-    {
-      "label": "Cancel"
-    }
-  ]
+  "action":
+  {
+    "label": "Cancel"
+  }
 }

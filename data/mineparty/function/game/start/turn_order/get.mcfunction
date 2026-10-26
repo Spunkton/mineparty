@@ -23,13 +23,15 @@ execute as @p[tag=highest] run data modify storage mineparty:main turn_order app
 execute as @p[tag=highest] run data modify storage mineparty:main turn_order[-1].UUID set from entity @s UUID
 tag @p[tag=highest] add ordered
 
-# Schedule self if there are people left to be ordered
-execute if entity @p[tag=!ordered,tag=!not_playing] run schedule function mineparty:game/start/turn_order/get 1t
+# Wait until all people are ordered
+execute if entity @p[tag=!ordered,tag=!not_playing] run return run schedule function mineparty:game/start/turn_order/get 1t
 
-# If everyone is ordered
-execute unless entity @p[tag=!ordered,tag=!not_playing] run data modify storage mineparty:main turn_order_announcement set from storage mineparty:main turn_order
-execute unless entity @p[tag=!ordered,tag=!not_playing] run tag @a remove taking_turn
-execute unless entity @p[tag=!ordered,tag=!not_playing] run tellraw @a "\u00a7l========={Turn order}========="
-execute unless entity @p[tag=!ordered,tag=!not_playing] run scoreboard players set #announcement_line mineparty 1
-execute unless entity @p[tag=!ordered,tag=!not_playing] run function mineparty:game/start/turn_order/announce
-execute unless entity @p[tag=!ordered,tag=!not_playing] run tag @a remove ordered
+# Show turn order
+tag @a remove taking_turn
+execute as @a run function mineparty:game/start/turn_order/show
+
+# Cleanup
+tag @a remove ordered
+
+# Continue game
+schedule function mineparty:command_queue 3s

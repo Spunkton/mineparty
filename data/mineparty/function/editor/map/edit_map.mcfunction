@@ -9,10 +9,13 @@ $execute unless data storage mineparty:maps maps.$(id).shop.pool run data modify
 
 # Add tags
 $data modify storage mineparty:maps maps.$(id).tags set value []
-tellraw @s[tag=debug] {"color":"gray","text":"Adding tags..."}
+tellraw @s[tag=debug] {"color":"yellow","text":"Adding tags..."}
 ### Key?
-$execute if entity @n[tag=tile,nbt={data:{map:"$(id)",links:[{type:key}]}}] run tellraw @s[tag=debug] {"color":"gray","text":"Added tag \"key\"."}
+$execute if entity @n[tag=tile,nbt={data:{map:"$(id)",links:[{type:key}]}}] run tellraw @s[tag=debug] {"color":"yellow","text":"Added tag \"key\"."}
 $execute if entity @n[tag=tile,nbt={data:{map:"$(id)",links:[{type:key}]}}] run data modify storage mineparty:maps maps.$(id).tags append value {key:true}
+
+# Save tiles
+$execute as @e[tag=tile,nbt={data:{map:"$(id)"}}] run function mineparty:map/tiles/save
 
 # Warnings
 $execute as @e[tag=tile,nbt={data:{map:"$(id)"}}] unless data entity @s data.links[] run tellraw @p[tag=self] {"color":"red","text":"Warning: Map contains dead ends."}

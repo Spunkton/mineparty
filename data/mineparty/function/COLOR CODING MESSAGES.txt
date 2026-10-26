@@ -1,10 +1,11 @@
 White = Basic stuff
 Aqua = Choice/ Interactable
 Light purple = Host messages
-Gold = Events/ server messages/ emphasis
+Gold = Events/ emphasis
 Green = Good
 Red = Bad/ Error
 Gray = Feedback/ confirmation
 Blue = Input keys
+Yellow = Debug
 
 Putting this here to stay consistent

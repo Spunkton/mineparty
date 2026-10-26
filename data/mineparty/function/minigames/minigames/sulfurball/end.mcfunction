@@ -7,7 +7,7 @@ execute if score Pink minigames_teams = Blue minigames_teams unless score #golde
 # Stops schedule
 schedule clear mineparty:minigames/minigames/sulfurball/tick
 schedule clear mineparty:minigames/minigames/sulfurball/goal/return
-function mineparty:timer/abort
+function mineparty:timer/cancel
 
 # Signal
 title @a title "Game over!"
